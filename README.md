@@ -251,7 +251,7 @@ kubectl get pv | grep ebs-claim
 ```
 pvc-108dd7ee-149f-40b5-b562-3c86b892b9cc   4Gi        RWO            Delete           Bound    default/ebs-claim   ebs-sc                  5h3m
 ```
-3.5 验证数据成功写入EFS文件系统
+3.5 验证数据成功写入EBS卷
 
 ```
 kubectl exec -it app -- cat /data/out.txt
